@@ -3,34 +3,24 @@
 namespace VehicleApp
 {
     /// <summary>
-    /// Repræsenterer en bil.
+    /// Repræsenterer en bil som arver fra Vehicle.
     /// </summary>
-    public class Car
+    public class Car : Vehicle
     {
-        /// <summary>
-        /// Bilens nummerplade.
-        /// </summary>
-        public string Licenseplate { get; set; }
-
-        /// <summary>
-        /// En dato relateret til bilen.
-        /// </summary>
-        public DateTime Date { get; set; }
-
+        
         /// <summary>
         /// Returnerer prisen som er 240 kr.
         /// </summary>
-        /// <returns>240 kr.</returns>
-        public double Price()
+        public override double Price()
         {
             return 240.0;
         }
 
+        
         /// <summary>
         /// Returnerer køretøjstypen som "Car".
         /// </summary>
-        /// <returns>"Car"</returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Car";
         }

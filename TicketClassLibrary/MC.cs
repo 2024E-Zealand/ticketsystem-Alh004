@@ -3,24 +3,25 @@ using System;
 namespace VehicleApp
 {
     /// <summary>
-    /// Repræsenterer en motorcykel.
+    /// Repræsenterer en motorcykel som arver fra base klassen vehicle
     /// </summary>
-    public class MC : Car
+    public class MC : Vehicle
+
     {
+        
         /// <summary>
-        /// Returnerer prisen som er 125 kr.
+        /// Opretter en MC
         /// </summary>
-        /// <returns>125 kr.</returns>
-        public new double Price()
+        public override double Price()
         {
             return 125.0;
         }
 
+        
         /// <summary>
-        /// Returnerer køretøjstypen som "MC".
+        /// Returnerer køretøjstypen
         /// </summary>
-        /// <returns>"MC"</returns>
-        public new string VehicleType()
+        public override string VehicleType()
         {
             return "MC";
         }
