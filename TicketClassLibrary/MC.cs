@@ -1,11 +1,9 @@
-using System;
-
 namespace VehicleApp
 {
     /// <summary>
     /// Repræsenterer en motorcykel som arver fra base klassen vehicle
     /// </summary>
-    public class MC : Vehicle
+    public class Mc : Vehicle
 
     {
         
