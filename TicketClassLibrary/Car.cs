@@ -3,33 +3,33 @@
 namespace VehicleApp
 {
     /// <summary>
-    /// viser en bil med en nummerplade og en dato.
+    /// Repræsenterer en bil.
     /// </summary>
     public class Car
     {
         /// <summary>
-        /// Henter bilens nummerplade.
+        /// Bilens nummerplade.
         /// </summary>
         public string Licenseplate { get; set; }
 
         /// <summary>
-        /// Henter en dato relateret til bilen.
+        /// En dato relateret til bilen.
         /// </summary>
         public DateTime Date { get; set; }
 
         /// <summary>
-        /// Returnerer prisen på bilen
+        /// Returnerer prisen som er 240 kr.
         /// </summary>
-        /// <returns>Den faste pris på 240.</returns>
+        /// <returns>240 kr.</returns>
         public double Price()
         {
             return 240.0;
         }
 
         /// <summary>
-        /// Returnerer bil som car
+        /// Returnerer køretøjstypen som "Car".
         /// </summary>
-        /// <returns>Strengen "Car".</returns>
+        /// <returns>"Car"</returns>
         public string VehicleType()
         {
             return "Car";
