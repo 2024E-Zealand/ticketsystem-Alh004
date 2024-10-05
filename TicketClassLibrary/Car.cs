@@ -3,22 +3,22 @@
 namespace VehicleApp
 {
     /// <summary>
-    /// Repræsenterer en bil med en nummerplade og en dato.
+    /// viser en bil med en nummerplade og en dato.
     /// </summary>
     public class Car
     {
         /// <summary>
-        /// Henter eller angiver bilens nummerplade.
+        /// Henter bilens nummerplade.
         /// </summary>
         public string Licenseplate { get; set; }
 
         /// <summary>
-        /// Henter eller angiver en dato relateret til bilen.
+        /// Henter en dato relateret til bilen.
         /// </summary>
         public DateTime Date { get; set; }
 
         /// <summary>
-        /// Returnerer prisen på bilen, som er fastsat til 240.
+        /// Returnerer prisen på bilen
         /// </summary>
         /// <returns>Den faste pris på 240.</returns>
         public double Price()
@@ -27,7 +27,7 @@ namespace VehicleApp
         }
 
         /// <summary>
-        /// Returnerer køretøjstypen, som er "Car".
+        /// Returnerer bil som car
         /// </summary>
         /// <returns>Strengen "Car".</returns>
         public string VehicleType()
