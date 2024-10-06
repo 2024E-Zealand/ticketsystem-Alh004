@@ -2,10 +2,10 @@ using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using VehicleApp;
 
-namespace VehicleAppTests
+namespace TicketClassLibrary.w
 {
     [TestClass]
-    public class MCTests
+    public class McTests
     {
         /// <summary>
         /// Tester prisen for MC (125 kr).

@@ -53,5 +53,53 @@ namespace TicketClassLibrary.w
             
             car.LicensePlate="12345678";
         }
+        
+        
+        /// <summary>
+        /// Tester at brobizz rabatten virker
+        /// </summary>
+        [TestMethod]
+        public void DiscountBB_WithBroBizz_ShouldApply5PercentDiscount()
+        {
+            var car = new Car()
+            {
+                BroBizz = true
+            };
+            var discountedPrice = car.DiscountBB();
+            Assert.AreEqual(228.0, discountedPrice, 0.01);
+        }
+        
+        
+        /// <summary>
+        /// Tester weekndsrabbaten virker
+        /// </summary>
+        [TestMethod]
+        public void WeekendDiscount_OnWeekend()
+        {
+            var car = new Car()
+            {
+                Date = new DateTime(2025,03,23),
+                BroBizz = false
+            };
+            var discountedPrice = car.WeekendDiscount();
+            Assert.AreEqual(192.0, discountedPrice, 0.01);
+        }
+        
+        
+        /// <summary>
+        /// Tester at weekndsrabbaten + brobizz rabbaten virker
+        /// </summary>
+        [TestMethod]
+        public void DiscountBB_WithBroBizz_ShouldApply5PercentDiscount_Also_with_Weekend_Discount()
+        {
+            var car = new Car()
+            {
+                Date = new DateTime(2025,03,23),
+                BroBizz = true
+            };
+            var discountedPrice = car.WeekendDiscount();
+            Assert.AreEqual(182.4, discountedPrice, 0.01);
+        }
+        
     }
 }
