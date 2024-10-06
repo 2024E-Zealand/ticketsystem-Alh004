@@ -1,23 +1,20 @@
 namespace VehicleApp
 {
     /// <summary>
-    /// Repræsenterer en motorcykel som arver fra base klassen vehicle
+    /// Motorcykel.
     /// </summary>
-    public class Mc : Vehicle
-
+    public class MC : Vehicle
     {
-        
         /// <summary>
-        /// Opretter en MC
+        /// Returnerer prisen (125 kr).
         /// </summary>
         public override double Price()
         {
             return 125.0;
         }
 
-        
         /// <summary>
-        /// Returnerer køretøjstypen
+        /// Returnerer "MC".
         /// </summary>
         public override string VehicleType()
         {
