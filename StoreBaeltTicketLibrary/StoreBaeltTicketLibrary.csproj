@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="TicketClassLibrary">
+        <HintPath>..\..\..\BrideSys\TicketClassLibrary.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\..\BroSystem\TicketClassLibrary.dll">
+        <Link>extern dll\BroSystem\TicketClassLibrary.dll</Link>
+      </Content>
+      <Content Include="..\..\..\BroSystem\TicketClassLibrary.xml">
+        <Link>extern dll\BroSystem\TicketClassLibrary.xml</Link>
+      </Content>
+    </ItemGroup>
+
+</Project>
