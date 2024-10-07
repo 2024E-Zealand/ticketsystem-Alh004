@@ -6,6 +6,10 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\net8.0\StoreBaeltTicketLibrary.xml</DocumentationFile>
+    </PropertyGroup>
+
     <ItemGroup>
       <Reference Include="TicketClassLibrary">
         <HintPath>..\..\..\BrideSys\TicketClassLibrary.dll</HintPath>
